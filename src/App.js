@@ -22,7 +22,7 @@ const SliderImages = ({ images, currentIndex, options }) => {
     </div>
     )
 };
-// - ВЫДАЁТ ОШИБКУ ЧТО НЕ МОЖЕТ ПРОЧИТАТЬ СВОЙСТВО titles.. НЕ ПОЙМУ В ЧЁМ ПРОБЛЕМА С ПЕРЕДАЧЕЙ ПРОПСОВ.  
+
   
     
 //КОМОПНЕНТ СМЕНЫ ТОЧЕК:
@@ -86,7 +86,7 @@ const handleArrowClick = (direction) => {
 return (
     <main>
       <section className="slider">
-        <SliderImages images={images} currentIndex={currentIndex} />
+        <SliderImages images={images} currentIndex={currentIndex} options={options} />
         <div className="slider__arrows">
           <div className="slider__arrow left" onClick={() => handleArrowClick('left')}>&#9668;</div>
           <div className="slider__arrow right" onClick={() => handleArrowClick('right')}>&#9658;</div>
@@ -96,4 +96,4 @@ return (
     </main>
   );
 }
-//НАПРИМЕР СТРОКА 94 - аналогичный синтаксис и всё работает. А  в строке 18 - нет
+
